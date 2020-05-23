@@ -1,4 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(192, 100%, 9%);
+  margin: 0;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+}
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 75px;
+  cursor: pointer;
+}
+/* Header section */
+.header {
+  background: hsl(193, 100%, 96%) url(../images/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 50px 100px;
+}
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.header__logo-image {
+  height: 39px;
+}
+.header__logo-button {
+  background: #ffffff;
+  color: hsl(192, 100%, 9%);
+  box-shadow: 0px 2px 5px hsl(0, 0%, 81%);
+}
+.header__content {
+  display: flex;
+  column-gap: 50px;
+}
+.header__content-text {
+  flex-shrink: 1.8;
+  line-height: 1.5;
+}
+.header__content-title {
+  display: flex;
+  flex-direction: column;
+}
+.header__content-button {
+  background: hsl(322, 100%, 66%);
+  color: #ffffff;
+  margin-top: 20px;
+}
 
 /* Attribution section */
 .attribution {
@@ -7,4 +62,53 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+@media all and (max-width: 1260px) {
+  /* Header Section */
+  .header__content-text {
+    flex-shrink: unset;
+  }
+}
+@media all and (max-width: 928px) {
+  /* Header Section */
+  .header {
+    background: hsl(193, 100%, 96%) url(../images/bg-hero-mobile.svg);
+    padding: 50px 20px;
+  }
+  .header__logo {
+    margin-bottom: 30px;
+  }
+  .header__content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header__content-button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .header__content-image {
+    width: 100%;
+    align-self: center;
+  }
+}
+@media all and (max-width: 568px) {
+  /* Header Section */
+  .header__logo-image {
+    height: 20px;
+  }
+  .header__logo-button {
+    font-size: 12px;
+    padding: 5px 30px;
+  }
+  .header__content {
+    margin: 0 15px;
+  }
+  .header__content-title {
+    font-size: 26px;
+  }
+  .header__content-text {
+    font-size: 16px;
+  }
 }
