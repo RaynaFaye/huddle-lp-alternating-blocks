@@ -17,6 +17,14 @@ body {
   padding: 15px 75px;
   cursor: pointer;
 }
+.screen-reader {
+  position: absolute;
+  left: -100vw;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 /* Header section */
 .header {
   background: hsl(193, 100%, 96%) url(../images/bg-hero-desktop.svg);
@@ -120,14 +128,25 @@ body {
 .footer__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  grid-gap: 15px;
 }
-.footer__content__general-info > * {
+.footer__content__general-info {
+  padding-left: 30px;
+}
+.footer__content__general-info__item {
   margin-bottom: 25px;
+  padding-left: 10px;
 }
-.footer__content__general-info__icon {
-  margin-right: 25px;
+.footer__content__general-info__location {
+  list-style-image: url(../images/icon-location.svg);
 }
+.footer__content__general-info__phone {
+  list-style-image: url(../images/icon-phone.svg);
+}
+.footer__content__general-info__email {
+  list-style-image: url(../images/icon-email.svg);
+}
+
 .footer__content__menu {
   display: flex;
   list-style: none;
