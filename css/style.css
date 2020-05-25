@@ -55,6 +55,38 @@ body {
   margin-top: 20px;
 }
 
+/* Main content info sections */
+.info-section {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px hsl(210, 17%, 77%);
+  margin: 50px 125px;
+  align-items: center;
+}
+.info-section:first-of-type {
+  margin-top: 200px;
+}
+.info-section__text-left {
+  padding: 0 125px;
+}
+.info-section__text-right {
+  padding: 0 20px 0 0px;
+}
+.info-section__paragraph {
+  color: hsl(208, 11%, 55%);
+}
+.info-section__image {
+  width: 100%;
+  padding: 50px 20px 50px 0;
+}
+.info-section__image-left {
+  flex-shrink: 1.15;
+  padding: 50px 100px 50px 100px;
+}
+.info-section__image-right {
+  padding: 50px 20px 50px 0;
+}
+
 /* Attribution section */
 .attribution {
   font-size: 11px;
