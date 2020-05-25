@@ -221,9 +221,32 @@ body {
   /* Start section */
   .info-section__start {
     width: auto;
+    margin-bottom: -100px;
   }
   .info-section__start-button {
     margin-top: 20px;
+  }
+
+  /* Footer Section */
+  .footer {
+    padding: 200px 20px 50px 20px;
+  }
+  .footer__logo {
+    margin-bottom: 25px;
+    width: 50%;
+  }
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 0;
+  }
+  .footer__content__menu {
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer__copyright {
+    align-self: center;
+    font-size: 14px;
   }
 }
 @media all and (max-width: 568px) {
